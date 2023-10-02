@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(125, 162, 255);
+    padding: .5rem;
+    width: 100%;
+}
+
+header h1{
+    font-size: 2.5rem;
+}
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: 2rem;
+}
+
+.fotos img{
+    width: 56rem;
+    border-radius: .8rem;
+}
+
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3rem 6rem;
+}
+
+.texto h1{
+    font-size: 3rem;
+}
+
+.texto p{
+  font-size: 1.4rem;
+  padding: .3rem 0;  
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: .8rem;
+    background: rgb(94, 140, 255);
+}
+
+footer h2{
+    font-size: 2rem;
+}
+
+
+@media (max-width: 938px){
+    .fotos img{
+        width: 50rem;
+    } 
+    .texto{
+        margin: 2rem 5rem;
+    }
+    footer{
+       width: 100%; 
+    }
+}
+
+@media (max-width: 850px){
+    header h1{
+        font-size: 2rem;
+    }
+    .fotos img{
+        width: 40rem;
+    }
+    .texto{
+        margin: 2rem 3rem;
+    }
+    .texto h1{
+        font-size: 2.5rem;
+    }
+    .texto p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .fotos img{
+        width: 30rem;
+    }
+}
+
+@media (max-width: 522px){
+    header h1{
+        font-size: 1.5rem;
+    }
+    .fotos img{
+        width: 20rem;
+    }
+    .texto h1{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 358px){
+    .fotos img{
+        width: 15rem;
+    }
+    .texto{
+        margin: 2rem 1.5rem;
+    }
+}
